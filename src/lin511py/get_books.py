@@ -44,6 +44,7 @@ def get_punkt_tokens(text:str) -> list[str]:
       (list[str]): A list of tokens
   """
   __check_punkt()
+  __check_punkt_tab()
   tokens = word_tokenize(text)
   return tokens
 
@@ -59,5 +60,6 @@ def get_punkt_sent(text:str) -> list[str]:
       (list[str]): A list of sentence tokens
   """
   __check_punkt_tab()
+  __check_punkt_tab()  
   tokens = sent_tokenize(text)
   return tokens
