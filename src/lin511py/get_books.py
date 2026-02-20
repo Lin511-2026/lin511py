@@ -10,7 +10,7 @@ def __check_punkt():
 
 def __check_punkt_tab():
   try:
-    nltk.data.find('tokenizers/punkt_tab')
+    nltk.data.find('tokenizers/punkt_tab/english')
   except LookupError:
     nltk.download('punkt_tab')  
 
